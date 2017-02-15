@@ -47,7 +47,7 @@ define(
                 var site = new cc.LabelTTF(i18n('Visit the project\'s site'), i18n.defaultFont, MENU_FONT_SIZE);
                 site.setColor(MENU_COLOR);
                 var siteMenuItem = new cc.MenuItemLabel(site, function () {
-                    window.open('https://github.com/BenzLeung/circle');
+                    window.open('https://github.com/BenzLeung/circle-physics');
                 });
 
                 var goBack = new cc.LabelTTF(i18n('<< Go back'), i18n.defaultFont, MENU_FONT_SIZE);

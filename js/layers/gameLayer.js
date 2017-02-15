@@ -311,7 +311,7 @@ define(
 
                 // 百度统计
                 if (window['_hmt']) {
-                    window['_hmt'].push(['_trackEvent', 'circleWar' + (cc.sys.isMobile ? 'Mobile' : 'Desktop'), 'playStart']);
+                    window['_hmt'].push(['_trackEvent', 'circleWarPhysics' + (cc.sys.isMobile ? 'Mobile' : 'Desktop'), 'playStart']);
                 }
             },
             resetGame: function () {
@@ -394,11 +394,11 @@ define(
                     this.redCircle[i].pause();
                 }
 
-                document.title = i18n('I got %d points in Circle War!').replace('%d', this.score + '');
+                document.title = i18n('I got %d points in Circle War Physics!').replace('%d', this.score + '');
 
                 // 百度统计
                 if (window['_hmt']) {
-                    window['_hmt'].push(['_trackEvent', 'circleWar' + (cc.sys.isMobile ? 'Mobile' : 'Desktop'), 'playFinish', this.score + '', this.score]);
+                    window['_hmt'].push(['_trackEvent', 'circleWarPhysics' + (cc.sys.isMobile ? 'Mobile' : 'Desktop'), 'playFinish', this.score + '', this.score]);
                 }
 
                 this.isOver = true;
